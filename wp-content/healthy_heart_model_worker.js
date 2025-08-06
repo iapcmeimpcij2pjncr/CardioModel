@@ -245,7 +245,7 @@ class BivenLVADModel: \n \
             else: \n \
                 Qra = 1/Rtv*(Pra - PRV) \n \
  \n \
-            QLVAD = 1/(Rin + Rout)*7.05#0.97*(-0.0256*0.007500617*(PLV - Part)+3.2)/60 \n \
+            QLVAD = 0#1/(Rin + Rout)*7.05#0.97*(-0.0256*0.007500617*(PLV - Part)+3.2)/60 \n \
             #Qao = 1/Rao*(PLV - Part) \n \
             Qper = 1/Rper*(Part - Pvc) \n \
             Qvc = 1/Rvc*(Pvc - Pra) \n \
