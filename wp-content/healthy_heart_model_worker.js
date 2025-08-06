@@ -8,7 +8,8 @@ async function loadPyodideAndPackages() {
     });
 
     // Your Python code here...
-    await pyodide.runPython(' \n \
+    await pyodide.runPython(
+' \n \
 from math import sin, exp, pi \n \
 import json \n \
  \n \
@@ -42,8 +43,8 @@ UNITS_MAP = { \n \
     "volume" : "mL", \n \
     "resting volume" : "mL", \n \
     "pressure" : "mmHg", \n \
-    "resistance" : "idk lolol", \n \
-    "compliance" : "idk lolol", \n \
+    "resistance" : "Pa ms/mL", \n \
+    "compliance" : "mL/Pa", \n \
 } \n \
  \n \
 class Value: \n \
@@ -93,7 +94,7 @@ class BivenLVADModel: \n \
             return 0.5 * exp((-t + (1.5*Tmax))/tau) \n \
  \n \
     #Closed loop bi-ventricular circulatory model with LVAD \n \
-    def calculate(self, output_full = False): \n \
+    def calculate(self, use_LVAD, output_full = False): \n \
         e = self.e \n \
  \n \
         dt = 2 \n \
@@ -245,7 +246,8 @@ class BivenLVADModel: \n \
             else: \n \
                 Qra = 1/Rtv*(Pra - PRV) \n \
  \n \
-            QLVAD = 0#1/(Rin + Rout)*7.05#0.97*(-0.0256*0.007500617*(PLV - Part)+3.2)/60 \n \
+            QLVAD = 0 \n \
+            if use_LVAD: QLVAD = 1/(Rin + Rout)*7.05 #0.97*(-0.0256*0.007500617*(PLV - Part)+3.2)/60 \n \
             #Qao = 1/Rao*(PLV - Part) \n \
             Qper = 1/Rper*(Part - Pvc) \n \
             Qvc = 1/Rvc*(Pvc - Pra) \n \
@@ -287,9 +289,9 @@ class BivenLVADModel: \n \
         if output_full: \n \
             return t, Vol, Prs \n \
  \n \
-        return [i - final_cycle_start for i in t[output_indexes]], [i[output_indexes] for i in Prs], [i[output_indexes] for i in Vol] \n \
+        return [i - final_cycle_start for i in t[output_indexes]], [i[output_indexes] for i in Vol], [i[output_indexes] for i in Prs] \n \
  \n \
-def generate_data(data): \n \
+def generate_data(data, use_LVAD = False): \n \
     simModel = BivenLVADModel() \n \
     try: \n \
         for key, value in simModel.__dict__.items(): \n \
@@ -298,7 +300,7 @@ def generate_data(data): \n \
         axes = tuple(map(int, data["axis"].split())) \n \
         axes = tuple(zip(axes[::2], axes[1::2])) \n \
  \n \
-        time, pressures, volumes = simModel.calculate() \n \
+        time, pressures, volumes = simModel.calculate(use_LVAD) \n \
         dropdown_map = [time] + pressures + volumes \n \
  \n \
         plots = [None for _ in range(len(axes))] \n \
@@ -315,7 +317,8 @@ def generate_data(data): \n \
     except Exception as e: \n \
         print(e.with_traceback()) \n \
         return {"data": "error"} \n \
-');
+'
+);
 }
 
 
