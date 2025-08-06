@@ -287,15 +287,16 @@ class BivenLVADModel: \n \
         output_indexes = slice(t.index(final_cycle_start), -1)  # to get the very last cycle \n \
         Prs = [[i * 0.007500617 for i in row] for row in Prs]  # update units \n \
         if output_full: \n \
-            return t, Vol, Prs \n \
+            return t, Prs, Vol \n \
  \n \
-        return [i - final_cycle_start for i in t[output_indexes]], [i[output_indexes] for i in Vol], [i[output_indexes] for i in Prs] \n \
+        return [i - final_cycle_start for i in t[output_indexes]], [i[output_indexes] for i in Prs], [i[output_indexes] for i in Vol] \n \
  \n \
 def generate_data(data, use_LVAD = False): \n \
     simModel = BivenLVADModel() \n \
     try: \n \
-        for key, value in simModel.__dict__.items(): \n \
-            value.value = float(data["parameters"][key]) \n \
+        print(data["parameters"].items()) \n \
+        for key, value in data["parameters"].items(): \n \
+            simModel.__dict__[key].value = float(value) \n \
  \n \
         axes = tuple(map(int, data["axis"].split())) \n \
         axes = tuple(zip(axes[::2], axes[1::2])) \n \
