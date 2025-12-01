@@ -29,12 +29,6 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 <style id="wp-block-paragraph-inline-css">
 .is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
 </style>
-<style id="wp-block-separator-inline-css">
-@charset "UTF-8";.wp-block-separator{border:none;border-top:2px solid}:root :where(.wp-block-separator.is-style-dots){height:auto;line-height:1;text-align:center}:root :where(.wp-block-separator.is-style-dots):before{color:currentColor;content:"&middot;&middot;&middot;";font-family:serif;font-size:1.5em;letter-spacing:2em;padding-left:2em}.wp-block-separator.is-style-dots{background:none!important;border:none!important}
-</style>
-<style id="wp-block-separator-theme-inline-css">
-.wp-block-separator.has-css-opacity{opacity:.4}.wp-block-separator{border:none;border-bottom:2px solid;margin-left:auto;margin-right:auto}.wp-block-separator.has-alpha-channel-opacity{opacity:1}.wp-block-separator:not(.is-style-wide):not(.is-style-dots){width:100px}.wp-block-separator.has-background:not(.is-style-dots){border-bottom:none;height:1px}.wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots){height:2px}
-</style>
 <style id="wp-block-columns-inline-css">
 .wp-block-columns{align-items:normal!important;box-sizing:border-box;display:flex;flex-wrap:wrap!important}@media (min-width:782px){.wp-block-columns{flex-wrap:nowrap!important}}.wp-block-columns.are-vertically-aligned-top{align-items:flex-start}.wp-block-columns.are-vertically-aligned-center{align-items:center}.wp-block-columns.are-vertically-aligned-bottom{align-items:flex-end}@media (max-width:781px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:100%!important}}@media (min-width:782px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column[style*=flex-basis]{flex-grow:0}}.wp-block-columns.is-not-stacked-on-mobile{flex-wrap:nowrap!important}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column{flex-basis:0;flex-grow:1}.wp-block-columns.is-not-stacked-on-mobile>.wp-block-column[style*=flex-basis]{flex-grow:0}:where(.wp-block-columns){margin-bottom:1.75em}:where(.wp-block-columns.has-background){padding:1.25em 2.375em}.wp-block-column{flex-grow:1;min-width:0;overflow-wrap:break-word;word-break:break-word}.wp-block-column.is-vertically-aligned-top{align-self:flex-start}.wp-block-column.is-vertically-aligned-center{align-self:center}.wp-block-column.is-vertically-aligned-bottom{align-self:flex-end}.wp-block-column.is-vertically-aligned-stretch{align-self:stretch}.wp-block-column.is-vertically-aligned-bottom,.wp-block-column.is-vertically-aligned-center,.wp-block-column.is-vertically-aligned-top{width:100%}
 </style>
@@ -80,7 +74,6 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 :root :where(.wp-block-navigation a:where(:not(.wp-element-button)):focus){text-decoration: none;}
 :root :where(.wp-block-navigation a:where(:not(.wp-element-button)):active){text-decoration: none;}
 :root :where(.wp-block-post-content a:where(:not(.wp-element-button))){color: var(--wp--preset--color--primary);text-decoration: underline;}
-:root :where(.wp-block-separator){}:root :where(.wp-block-separator:not(.is-style-wide):not(.is-style-dots):not(.alignwide):not(.alignfull)){width: 100px}
 </style>
 <style id="core-block-supports-inline-css">
 .wp-container-core-navigation-is-layout-51cb38a2{gap:var(--wp--preset--spacing--superbspacing-small);justify-content:center;}.wp-container-core-columns-is-layout-28f84493{flex-wrap:nowrap;}.wp-elements-1461160fd4b22702b0e09de0154b4557 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--mono-2);}.wp-container-core-group-is-layout-938f5026 > .alignfull{margin-right:calc(var(--wp--preset--spacing--superbspacing-xsmall) * -1);margin-left:calc(var(--wp--preset--spacing--superbspacing-xsmall) * -1);}.wp-container-core-group-is-layout-0f998bd2 > .alignfull{margin-right:calc(var(--wp--preset--spacing--superbspacing-small) * -1);margin-left:calc(var(--wp--preset--spacing--superbspacing-small) * -1);}.wp-container-core-group-is-layout-0f998bd2 > *{margin-block-start:0;margin-block-end:0;}.wp-container-core-group-is-layout-0f998bd2 > * + *{margin-block-start:var(--wp--preset--spacing--superbspacing-small);margin-block-end:0;}
@@ -159,7 +152,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 
 
 
-<p class="has-text-align-center">Place holder description</p>
+<p class="has-text-align-center">Explore the Healthy Heart Model in CardioModel, an interactive Python GUI that simulates normal cardiovascular function using a biventricular finite element (FE) model coupled with coronary perfusion in a closed-loop systemic and pulmonary circulation. This baseline model captures myocardial demand-supply feedback, including metabolic regulation and myocardium-vessel interactions, under resting and exercise conditions, reproducing pressure-volume loops, ejection fractions, and regional blood flows in a healthy heart. Calibrated with clinical data, it highlights how a normal heart maintains homeostasis against increased demand, such as through efficient pumping from the ventricles, proper valve function to direct blood flow, and a steady electrical system regulating heartbeat at 60 to 100 beats per minute, contrasting with pathologies like coronary artery disease involving plaque buildup in arteries, heart failure where the heart cannot pump effectively, arrhythmias disrupting heart rhythm, and congenital defects like atrial septal defects. Users can adjust parameters to visualize hemodynamics, stresses, and perfusion, providing insights into preventive strategies against major cardiovascular diseases, which include heart attacks and strokes as leading global causes of death.</p>
 
 
 
@@ -173,67 +166,129 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 
 
 
-<hr class="wp-block-separator has-alpha-channel-opacity is-style-wide" style="margin-top:var(--wp--preset--spacing--superbspacing-xxsmall);margin-bottom:var(--wp--preset--spacing--superbspacing-xxsmall)">
-
-
-
 <div class="row">
     <div class="col-sm-4">
+        <style>
+            .form-row {
+                display: flex;
+                align-items: center;        /* vertically align label & input */
+                margin-bottom: 5px;
+            }
+
+            .form-row label {
+                display: inline-block;
+                width: 500px;               /* fixed width for labels */
+                text-align: left;           /* keep label text left-aligned */
+            }
+
+            .form-row input {
+                width: 150px;               /* same width for all inputs */
+            }
+        </style>
         <form id="parameters">
-            <label for="VLV">Left Ventricle Volume (mL)</label>
-            <input type="number" name="VLV" id="VLV" step="1" value="50"><br>
-            <label for="Vart">Aorta Volume (mL)</label>
-            <input type="number" name="Vart" id="Vart" step="10" value="700"><br>
-            <label for="Vvc">Vena Cava Volume (mL)</label>
-            <input type="number" name="Vvc" id="Vvc" step="100" value="3200"><br>
-            <label for="Vra">Right Atrium Volume (mL)</label>
-            <input type="number" name="Vra" id="Vra" step="1" value="12.5"><br>
-            <label for="VRV">Right Ventricle Volume (mL)</label>
-            <input type="number" name="VRV" id="VRV" step="1" value="62"><br>
-            <label for="Vpa">Pulmonary Artery Volume (mL)</label>
-            <input type="number" name="Vpa" id="Vpa" step="10" value="175"><br>
-            <label for="Vpu">Pulmonary Vein Volume (mL)</label>
-            <input type="number" name="Vpu" id="Vpu" step="10" value="375"><br>
-            <label for="Vla">Left Atrium Volume (mL)</label>
-            <input type="number" name="Vla" id="Vla" step="1" value="12.5"><br>
+            <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide">
+            <div class="form-row">
+                <label for="VLV">Left Ventricle Volume (mL)</label>
+                <input type="number" name="VLV" id="VLV" step="1" value="50"><br>
+            </div>
+            <div class="form-row">
+                <label for="Vart">Aorta Volume (mL)</label>
+                <input type="number" name="Vart" id="Vart" step="10" value="700"><br>
+            </div>
+            <div class="form-row">
+                <label for="Vvc">Vena Cava Volume (mL)</label>
+                <input type="number" name="Vvc" id="Vvc" step="100" value="3200"><br>
+            </div>
+            <div class="form-row">
+                <label for="Vra">Right Atrium Volume (mL)</label>
+                <input type="number" name="Vra" id="Vra" step="1" value="12.5"><br>
+            </div>
+            <div class="form-row">
+                <label for="VRV">Right Ventricle Volume (mL)</label>
+                <input type="number" name="VRV" id="VRV" step="1" value="62"><br>
+            </div>
+            <div class="form-row">
+                <label for="Vpa">Pulmonary Artery Volume (mL)</label>
+                <input type="number" name="Vpa" id="Vpa" step="10" value="175"><br>
+            </div>
+            <div class="form-row">
+                <label for="Vpu">Pulmonary Vein Volume (mL)</label>
+                <input type="number" name="Vpu" id="Vpu" step="10" value="375"><br>
+            </div>
+            <div class="form-row">
+                <label for="Vla">Left Atrium Volume (mL)</label>
+                <input type="number" name="Vla" id="Vla" step="1" value="12.5"><br>
+            </div>
 
             <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide">
-            <label for="Rao">Aortic valve Resistance (Pa ms/mL)</label>
-            <input type="number" name="Rao" id="Rao" step="10" value="500"><br>
-            <label for="Rvc">Vena Cava resistance Resistance (Pa ms/mL)</label>
-            <input type="number" name="Rvc" id="Rvc" step="100" value="2000"><br>
-            <label for="Rper">Peripheral resistance Resistance (Pa ms/mL)</label>
-            <input type="number" name="Rper" id="Rper" step="10000" value="150000"><br>
-            <label for="Rtv">Tricuspid valve resistance Resistance (Pa ms/mL)</label>
-            <input type="number" name="Rtv" id="Rtv" step="10" value="200"><br>
-            <label for="Rpv">Pulmonary valve resistance Resistance (Pa ms/mL)</label>
-            <input type="number" name="Rpv" id="Rpv" step="10" value="250"><br>
-            <label for="Rpul">Pulmonary Artery resistance Resistance (Pa ms/mL)</label>
-            <input type="number" name="Rpul" id="Rpul" step="1000" value="18000"><br>
-            <label for="Rpu">Pulmonary vein resistance Resistance (Pa ms/mL)</label>
-            <input type="number" name="Rpu" id="Rpu" step="100" value="1500"><br>
-            <label for="Rmv">Mitral valve resistance Resistance (Pa ms/mL)</label>
-            <input type="number" name="Rmv" id="Rmv" step="10" value="150"><br>
+            <div class="form-row">
+                <label for="Rao">Aortic valve Resistance (Pa ms/mL)</label>
+                <input type="number" name="Rao" id="Rao" step="10" value="500"><br>
+            </div>
+            <div class="form-row">
+                <label for="Rvc">Vena Cava Resistance (Pa ms/mL)</label>
+                <input type="number" name="Rvc" id="Rvc" step="100" value="2000"><br>
+            </div>
+            <div class="form-row">
+                <label for="Rper">Peripheral Resistance (Pa ms/mL)</label>
+                <input type="number" name="Rper" id="Rper" step="10000" value="150000"><br>
+            </div>
+            <div class="form-row">
+                <label for="Rtv">Tricuspid valve Resistance (Pa ms/mL)</label>
+                <input type="number" name="Rtv" id="Rtv" step="10" value="200"><br>
+            </div>
+            <div class="form-row">
+                <label for="Rpv">Pulmonary valve Resistance (Pa ms/mL)</label>
+                <input type="number" name="Rpv" id="Rpv" step="10" value="250"><br>
+            </div>
+            <div class="form-row">
+                <label for="Rpul">Pulmonary Artery Resistance (Pa ms/mL)</label>
+                <input type="number" name="Rpul" id="Rpul" step="1000" value="18000"><br>
+            </div>
+            <div class="form-row">
+                <label for="Rpu">Pulmonary vein Resistance (Pa ms/mL)</label>
+                <input type="number" name="Rpu" id="Rpu" step="100" value="1500"><br>
+            </div>
+            <div class="form-row">
+                <label for="Rmv">Mitral valve Resistance (Pa ms/mL)</label>
+                <input type="number" name="Rmv" id="Rmv" step="10" value="150"><br>
+            </div>
 
             <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide">
-            <label for="Cao">Aortic Compliance Compliance (mL/Pa)</label>
-            <input type="number" name="Cao" id="Cao" step="0.01" value="0.014"><br>
-            <label for="Cvc">Venous Compliance Compliance (mL/Pa)</label>
-            <input type="number" name="Cvc" id="Cvc" step="0.1" value="0.5"><br>
-            <label for="Cpa">Pulmonary artery compliance Compliance (mL/Pa)</label>
-            <input type="number" name="Cpa" id="Cpa" step="0.01" value="0.035"><br>
-            <label for="Cpu">Pulmonary vein compliance Compliance (mL/Pa)</label>
-            <input type="number" name="Cpu" id="Cpu" step="0.01" value="0.08"><br>
+            <div class="form-row">
+                <label for="Cao">Aortic Compliance (mL/Pa)</label>
+                <input type="number" name="Cao" id="Cao" step="0.01" value="0.014"><br>
+            </div>
+            <div class="form-row">
+                <label for="Cvc">Venous Compliance (mL/Pa)</label>
+                <input type="number" name="Cvc" id="Cvc" step="0.1" value="0.5"><br>
+            </div>
+            <div class="form-row">
+                <label for="Cpa">Pulmonary artery Compliance (mL/Pa)</label>
+                <input type="number" name="Cpa" id="Cpa" step="0.01" value="0.035"><br>
+            </div>
+            <div class="form-row">
+                <label for="Cpu">Pulmonary vein Compliance (mL/Pa)</label>
+                <input type="number" name="Cpu" id="Cpu" step="0.01" value="0.08"><br>
+            </div>
 
             <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide">
-            <label for="Vart0">Arterial Resting Volume (mL)</label>
-            <input type="number" name="Vart0" id="Vart0" step="10" value="530"><br>
-            <label for="Vvc0">Venous Resting Volume (mL)</label>
-            <input type="number" name="Vvc0" id="Vvc0" step="100" value="2900"><br>
-            <label for="Vpa0">Pulmonary Artery Resting Volume (mL)</label>
-            <input type="number" name="Vpa0" id="Vpa0" step="1" value="30"><br>
-            <label for="Vpu0">Pulmonary Vein Resting Volume (mL)</label>
-            <input type="number" name="Vpu0" id="Vpu0" step="10" value="250"><br>
+            <div class="form-row">
+                <label for="Vart0">Arterial Resting Volume (mL)</label>
+                <input type="number" name="Vart0" id="Vart0" step="10" value="530"><br>
+            </div>
+            <div class="form-row">
+                <label for="Vvc0">Venous Resting Volume (mL)</label>
+                <input type="number" name="Vvc0" id="Vvc0" step="100" value="2900"><br>
+            </div>
+            <div class="form-row">
+                <label for="Vpa0">Pulmonary Artery Resting Volume (mL)</label>
+                <input type="number" name="Vpa0" id="Vpa0" step="1" value="30"><br>
+            </div>
+            <div class="form-row">
+                <label for="Vpu0">Pulmonary Vein Resting Volume (mL)</label>
+                <input type="number" name="Vpu0" id="Vpu0" step="10" value="250"><br>
+            </div>
             <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide">
         </form>
     </div>
@@ -324,6 +379,10 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 
 <div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow" style="flex-basis:25px"></div>
 </div>
+
+
+
+<p class="has-text-align-right">Hello</p>
 
 
 
@@ -508,10 +567,6 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
         }
     }
 </script>
-
-
-
-<p></p>
 </div>
 
 <footer class="wp-block-template-part">
