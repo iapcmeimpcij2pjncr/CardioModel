@@ -4,3 +4,8 @@
 <p>This baseline model captures myocardial demand-supply feedback, including metabolic regulation and myocardium-vessel interactions, under resting and exercise conditions, reproducing pressure-volume loops, ejection fractions, and regional blood flows in a healthy heart. Users can adjust parameters to visualize hemodynamics, stresses, and perfusion, providing insights into preventive strategies against major cardiovascular diseases, which include heart attacks and strokes as leading global causes of death.</p>
 <h2>LVAD model</h2>
 <p>LVAD, a mechanical pump implanted in the chest to aid the left ventricle in pumping blood for end-stage heart failure patients, is modeled here to assess its impact on hemodynamics, ventricular mechanics, and perfusion under conditions like pulmonary hypertension and exercise intolerance. Users can modify parameters to mimic LVAD as a bridge to transplant or destination therapy, visualizing real-time waveforms for pressures, flows, and stresses to explore therapeutic outcomes in cardiovascular diseases, the leading cause of global mortality.</p>
+<h2>Works used</h2>
+<p>
+<li> Fan, L., Sun, Y., Choy, J. S., Kassab, G. S., & Lee, L. C. (2022). Mechanism of exercise intolerance in heart diseases predicted by a computer model of myocardial demand–supply feedback system. Computer Methods and Programs in Biomedicine, 227, 107188. https://doi.org/10.1016/j.cmpb.2022.107188 </li>
+<li> Cai, C., Choy, J. S., He, G., Widlansky, M. E., Kassab, G. S., & Fan, L. (2025). Effects of pulmonary hypertension on right ventricular mechanics and coronary perfusion: Insights from computational simulations. Computers in Biology and Medicine, 197, 111113. https://doi.org/10.1016/j.compbiomed.2025.111113 </li>
+</p>
