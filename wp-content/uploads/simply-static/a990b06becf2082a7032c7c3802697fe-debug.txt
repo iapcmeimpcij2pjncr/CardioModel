@@ -1,0 +1,142 @@
+[2026-01-22 02:02:51] [class-ss-archive-creation-job.php:128] Starting a job; no job is presently running
+[2026-01-22 02:02:51] [class-ss-archive-creation-job.php:129] Here's our task list: setup, discover_urls, fetch_urls, generate_404, create_zip_archive, wrapup
+[2026-01-22 02:02:51] [class-ss-archive-creation-job.php:147] Pushing first task to queue: setup
+[2026-01-22 02:02:51] [class-ss-background-process.php:201] Saving to key: wp_archive_creation_job_batch_1dc8bb2f7b24a25a7359297e85e181b5. Data: Array(    [0] => setup)
+[2026-01-22 02:02:52] [class-ss-background-process.php:422] Maybe handling: Site ID: 1
+[2026-01-22 02:02:52] [class-ss-archive-creation-job.php:206] Current task: setup
+[2026-01-22 02:02:52] [class-ss-archive-creation-job.php:220] Performing task: setup
+[2026-01-22 02:02:52] [class-ss-task.php:44] Status message: [setup] Setting up
+[2026-01-22 02:02:52] [class-ss-setup-task.php:33] Creating archive directory: C:\Users\Patrick\Local Sites\cardiomodel\app\public/wp-content/uploads\simply-static\temp-files/simply-static-1-1769047371\
+[2026-01-22 02:02:52] [class-ss-setup-task.php:72] Adding origin URL to queue: http://cardiomodel.local/
+[2026-01-22 02:02:52] [class-ss-setup-task.php:93] Adding additional URL to queue: http://cardiomodel.local/left-ventrical-assistive-device/
+[2026-01-22 02:02:52] [class-ss-setup-task.php:93] Adding additional URL to queue: http://cardiomodel.local/healthy-model/
+[2026-01-22 02:02:52] [class-ss-setup-task.php:93] Adding additional URL to queue: http://cardiomodel.local/about/
+[2026-01-22 02:02:52] [class-ss-setup-task.php:93] Adding additional URL to queue: http://cardiomodel.local/
+[2026-01-22 02:02:52] [class-ss-setup-task.php:209] File C:/Users/Patrick/Local Sites/cardiomodel/app/public/wp-content/healthy_heart_model_worker.js exists; adding to queue as: http://cardiomodel.local/wp-content/healthy_heart_model_worker.js
+[2026-01-22 02:02:52] [class-ss-archive-creation-job.php:223] Task performed: 1
+[2026-01-22 02:02:52] [class-ss-archive-creation-job.php:247] We've found our next task: discover_urls
+[2026-01-22 02:02:52] [class-ss-archive-creation-job.php:206] Current task: discover_urls
+[2026-01-22 02:02:52] [class-ss-archive-creation-job.php:220] Performing task: discover_urls
+[2026-01-22 02:02:52] [class-ss-task.php:44] Status message: [discover_urls] Discovering URLs
+[2026-01-22 02:02:52] [class-ss-crawlers.php:74] Found 18 crawler files
+[2026-01-22 02:02:52] [class-ss-crawler.php:108] Processing batch of 1 URLs for Homepage URL crawler
+[2026-01-22 02:02:52] [class-ss-discover-urls-task.php:56] Added 1 URLs via Homepage URL Crawler
+[2026-01-22 02:02:52] [class-ss-task.php:44] Status message: [discover_urls] Added 1 URLs via Homepage URL Crawler
+[2026-01-22 02:02:52] [class-ss-crawler.php:108] Processing batch of 3 URLs for Post Type URLs crawler
+[2026-01-22 02:02:52] [class-ss-discover-urls-task.php:56] Added 3 URLs via Post Type URLs Crawler
+[2026-01-22 02:02:52] [class-ss-task.php:44] Status message: [discover_urls] Added 3 URLs via Post Type URLs Crawler
+[2026-01-22 02:02:52] [class-ss-task.php:44] Status message: [discover_urls] Added 0 URLs via Crawler
+[2026-01-22 02:02:52] [class-ss-archive-creation-job.php:223] Task performed: 1
+[2026-01-22 02:02:52] [class-ss-archive-creation-job.php:247] We've found our next task: fetch_urls
+[2026-01-22 02:02:52] [class-ss-archive-creation-job.php:206] Current task: fetch_urls
+[2026-01-22 02:02:52] [class-ss-archive-creation-job.php:220] Performing task: fetch_urls
+[2026-01-22 02:02:52] [class-ss-fetch-urls-task.php:72] Total pages: 5; Pages remaining: 5
+[2026-01-22 02:02:52] [class-ss-fetch-urls-task.php:79] URL: http://cardiomodel.local/
+[2026-01-22 02:02:52] [class-ss-task.php:58] [PAGES STATUS] Remaining:5; Total: 5
+[2026-01-22 02:02:52] [class-ss-fetch-urls-task.php:92] URL is not being excluded
+[2026-01-22 02:02:52] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Windows\TEMP/6971854cad525-iTtCp2.tmp
+[2026-01-22 02:02:52] [class-ss-url-fetcher.php:101] URL: http://cardiomodel.local/ - Is local asset: No
+[2026-01-22 02:02:52] [class-ss-page-handler.php:53] URL Prepared:http://cardiomodel.local/?simply_static_page=3604
+[2026-01-22 02:02:52] [class-ss-url-fetcher.php:489] Fetching URL: http://cardiomodel.local/?simply_static_page=3604
+[2026-01-22 02:02:53] [class-ss-url-fetcher.php:146] Filesize: 55147 bytes
+[2026-01-22 02:02:53] [class-ss-url-fetcher.php:222] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2026-01-22 02:02:53] [class-ss-url-fetcher.php:471] New filename for static page: /index.html
+[2026-01-22 02:02:53] [class-ss-url-fetcher.php:246] Renaming temp file from C:\Windows\TEMP/6971854cad525-iTtCp2.tmp to C:\Users\Patrick\Local Sites\cardiomodel\app\public/wp-content/uploads\simply-static\temp-files/simply-static-1-1769047371/index.html
+[2026-01-22 02:02:53] [class-ss-fetch-urls-task.php:171] Extracting URLs and replacing URLs in the static file
+[2026-01-22 02:02:53] [class-ss-fetch-urls-task.php:178] Adding 0 URLs to the queue
+[2026-01-22 02:02:53] [class-ss-fetch-urls-task.php:189] We're saving this URL; keeping the static file
+[2026-01-22 02:02:53] [class-ss-page.php:128] Checking Content Identical:5a2d599a24147f90fce2141535780592d984102f===. Value: FALSE
+[2026-01-22 02:02:53] [class-ss-fetch-urls-task.php:79] URL: http://cardiomodel.local/left-ventrical-assistive-device/
+[2026-01-22 02:02:53] [class-ss-task.php:58] [PAGES STATUS] Remaining:4; Total: 5
+[2026-01-22 02:02:53] [class-ss-fetch-urls-task.php:92] URL is not being excluded
+[2026-01-22 02:02:53] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Windows\TEMP/6971854dba6ee-g40E5F.tmp
+[2026-01-22 02:02:53] [class-ss-url-fetcher.php:101] URL: http://cardiomodel.local/left-ventrical-assistive-device/ - Is local asset: No
+[2026-01-22 02:02:53] [class-ss-page-handler.php:53] URL Prepared:http://cardiomodel.local/left-ventrical-assistive-device/?simply_static_page=3605
+[2026-01-22 02:02:53] [class-ss-url-fetcher.php:489] Fetching URL: http://cardiomodel.local/left-ventrical-assistive-device/?simply_static_page=3605
+[2026-01-22 02:02:54] [class-ss-url-fetcher.php:146] Filesize: 72397 bytes
+[2026-01-22 02:02:54] [class-ss-url-fetcher.php:222] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2026-01-22 02:02:54] [class-ss-url-fetcher.php:471] New filename for static page: /left-ventrical-assistive-device/index.html
+[2026-01-22 02:02:54] [class-ss-url-fetcher.php:246] Renaming temp file from C:\Windows\TEMP/6971854dba6ee-g40E5F.tmp to C:\Users\Patrick\Local Sites\cardiomodel\app\public/wp-content/uploads\simply-static\temp-files/simply-static-1-1769047371/left-ventrical-assistive-device/index.html
+[2026-01-22 02:02:54] [class-ss-fetch-urls-task.php:171] Extracting URLs and replacing URLs in the static file
+[2026-01-22 02:02:54] [class-ss-fetch-urls-task.php:178] Adding 0 URLs to the queue
+[2026-01-22 02:02:54] [class-ss-fetch-urls-task.php:189] We're saving this URL; keeping the static file
+[2026-01-22 02:02:54] [class-ss-page.php:128] Checking Content Identical:09ab06560dbf671f38e1183d526fa70c2c0c1e4d===. Value: FALSE
+[2026-01-22 02:02:54] [class-ss-fetch-urls-task.php:79] URL: http://cardiomodel.local/healthy-model/
+[2026-01-22 02:02:54] [class-ss-task.php:58] [PAGES STATUS] Remaining:3; Total: 5
+[2026-01-22 02:02:54] [class-ss-fetch-urls-task.php:92] URL is not being excluded
+[2026-01-22 02:02:54] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Windows\TEMP/6971854ee23f4-EXJk7J.tmp
+[2026-01-22 02:02:54] [class-ss-url-fetcher.php:101] URL: http://cardiomodel.local/healthy-model/ - Is local asset: No
+[2026-01-22 02:02:54] [class-ss-page-handler.php:53] URL Prepared:http://cardiomodel.local/healthy-model/?simply_static_page=3606
+[2026-01-22 02:02:54] [class-ss-url-fetcher.php:489] Fetching URL: http://cardiomodel.local/healthy-model/?simply_static_page=3606
+[2026-01-22 02:02:55] [class-ss-url-fetcher.php:146] Filesize: 72123 bytes
+[2026-01-22 02:02:55] [class-ss-url-fetcher.php:222] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2026-01-22 02:02:55] [class-ss-url-fetcher.php:471] New filename for static page: /healthy-model/index.html
+[2026-01-22 02:02:55] [class-ss-url-fetcher.php:246] Renaming temp file from C:\Windows\TEMP/6971854ee23f4-EXJk7J.tmp to C:\Users\Patrick\Local Sites\cardiomodel\app\public/wp-content/uploads\simply-static\temp-files/simply-static-1-1769047371/healthy-model/index.html
+[2026-01-22 02:02:55] [class-ss-fetch-urls-task.php:171] Extracting URLs and replacing URLs in the static file
+[2026-01-22 02:02:55] [class-ss-fetch-urls-task.php:178] Adding 0 URLs to the queue
+[2026-01-22 02:02:55] [class-ss-fetch-urls-task.php:189] We're saving this URL; keeping the static file
+[2026-01-22 02:02:55] [class-ss-page.php:128] Checking Content Identical:0ac7b8b608ce57e9f79ec60d753f019fa3583e96===. Value: FALSE
+[2026-01-22 02:02:55] [class-ss-fetch-urls-task.php:79] URL: http://cardiomodel.local/about/
+[2026-01-22 02:02:55] [class-ss-task.php:58] [PAGES STATUS] Remaining:2; Total: 5
+[2026-01-22 02:02:55] [class-ss-fetch-urls-task.php:92] URL is not being excluded
+[2026-01-22 02:02:55] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Windows\TEMP/6971854fcd7d9-flaknI.tmp
+[2026-01-22 02:02:55] [class-ss-url-fetcher.php:101] URL: http://cardiomodel.local/about/ - Is local asset: No
+[2026-01-22 02:02:55] [class-ss-page-handler.php:53] URL Prepared:http://cardiomodel.local/about/?simply_static_page=3607
+[2026-01-22 02:02:55] [class-ss-url-fetcher.php:489] Fetching URL: http://cardiomodel.local/about/?simply_static_page=3607
+[2026-01-22 02:02:56] [class-ss-url-fetcher.php:146] Filesize: 61216 bytes
+[2026-01-22 02:02:56] [class-ss-url-fetcher.php:222] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2026-01-22 02:02:56] [class-ss-url-fetcher.php:471] New filename for static page: /about/index.html
+[2026-01-22 02:02:56] [class-ss-url-fetcher.php:246] Renaming temp file from C:\Windows\TEMP/6971854fcd7d9-flaknI.tmp to C:\Users\Patrick\Local Sites\cardiomodel\app\public/wp-content/uploads\simply-static\temp-files/simply-static-1-1769047371/about/index.html
+[2026-01-22 02:02:56] [class-ss-fetch-urls-task.php:171] Extracting URLs and replacing URLs in the static file
+[2026-01-22 02:02:56] [class-ss-fetch-urls-task.php:178] Adding 0 URLs to the queue
+[2026-01-22 02:02:56] [class-ss-fetch-urls-task.php:189] We're saving this URL; keeping the static file
+[2026-01-22 02:02:56] [class-ss-page.php:128] Checking Content Identical:3d66b672b6ba9d9c8499a026229c9e2ba27e366b===. Value: FALSE
+[2026-01-22 02:02:56] [class-ss-fetch-urls-task.php:79] URL: http://cardiomodel.local/wp-content/healthy_heart_model_worker.js
+[2026-01-22 02:02:56] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 5
+[2026-01-22 02:02:56] [class-ss-fetch-urls-task.php:92] URL is not being excluded
+[2026-01-22 02:02:56] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Windows\TEMP/69718550c2a31-0S5ctu.tmp
+[2026-01-22 02:02:56] [class-ss-url-fetcher.php:101] URL: http://cardiomodel.local/wp-content/healthy_heart_model_worker.js - Is local asset: Yes
+[2026-01-22 02:02:56] [class-ss-page-handler.php:53] URL Prepared:http://cardiomodel.local/wp-content/healthy_heart_model_worker.js?simply_static_page=3608
+[2026-01-22 02:02:56] [class-ss-url-fetcher.php:113] Local path: /wp-content/healthy_heart_model_worker.js - Full file path: C:\Users\Patrick\Local Sites\cardiomodel\app\public/wp-content/healthy_heart_model_worker.js
+[2026-01-22 02:02:56] [class-ss-url-fetcher.php:117] Copying local file directly: C:\Users\Patrick\Local Sites\cardiomodel\app\public/wp-content/healthy_heart_model_worker.js
+[2026-01-22 02:02:56] [class-ss-url-fetcher.php:146] Filesize: 108794 bytes
+[2026-01-22 02:02:56] [class-ss-url-fetcher.php:222] http_status_code: 200 | content_type: application/javascript
+[2026-01-22 02:02:56] [class-ss-url-fetcher.php:471] New filename for static page: /wp-content/healthy_heart_model_worker.js
+[2026-01-22 02:02:56] [class-ss-url-fetcher.php:246] Renaming temp file from C:\Windows\TEMP/69718550c2a31-0S5ctu.tmp to C:\Users\Patrick\Local Sites\cardiomodel\app\public/wp-content/uploads\simply-static\temp-files/simply-static-1-1769047371/wp-content/healthy_heart_model_worker.js
+[2026-01-22 02:02:56] [class-ss-fetch-urls-task.php:171] Extracting URLs and replacing URLs in the static file
+[2026-01-22 02:02:56] [class-ss-fetch-urls-task.php:178] Adding 0 URLs to the queue
+[2026-01-22 02:02:56] [class-ss-fetch-urls-task.php:189] We're saving this URL; keeping the static file
+[2026-01-22 02:02:56] [class-ss-page.php:128] Checking Content Identical:acc3231fbe1435cb7ae07129fdf69edfe2449289===. Value: FALSE
+[2026-01-22 02:02:56] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 5 of 5 pages/files
+[2026-01-22 02:02:56] [class-ss-archive-creation-job.php:223] Task performed: 1
+[2026-01-22 02:02:56] [class-ss-archive-creation-job.php:247] We've found our next task: generate_404
+[2026-01-22 02:02:56] [class-ss-archive-creation-job.php:206] Current task: generate_404
+[2026-01-22 02:02:56] [class-ss-archive-creation-job.php:220] Performing task: generate_404
+[2026-01-22 02:02:56] [class-ss-task.php:44] Status message: [generate_404] Generating 404 Page.
+[2026-01-22 02:02:56] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: C:\Windows\TEMP/69718550d48c3-gouHnr.tmp
+[2026-01-22 02:02:56] [class-ss-url-fetcher.php:101] URL: http://cardiomodel.local/1769047377 - Is local asset: No
+[2026-01-22 02:02:56] [class-ss-page-handler.php:53] URL Prepared:http://cardiomodel.local/1769047377?simply_static_page=0
+[2026-01-22 02:02:56] [class-ss-url-fetcher.php:489] Fetching URL: http://cardiomodel.local/1769047377?simply_static_page=0
+[2026-01-22 02:02:57] [class-ss-url-fetcher.php:146] Filesize: 52508 bytes
+[2026-01-22 02:02:57] [class-ss-url-fetcher.php:222] http_status_code: 404 | content_type: text/html; charset=UTF-8
+[2026-01-22 02:02:57] [class-ss-url-fetcher.php:471] New filename for static page: 404/index.html
+[2026-01-22 02:02:57] [class-ss-url-fetcher.php:246] Renaming temp file from C:\Windows\TEMP/69718550d48c3-gouHnr.tmp to C:\Users\Patrick\Local Sites\cardiomodel\app\public/wp-content/uploads\simply-static\temp-files/simply-static-1-1769047371\404/index.html
+[2026-01-22 02:02:57] [class-ss-generate-404-task.php:149] Replacing URLs in the static file
+[2026-01-22 02:02:57] [class-ss-generate-404-task.php:155] We're saving this URL; keeping the static file
+[2026-01-22 02:02:57] [class-ss-page.php:128] Checking Content Identical:6d6385ddbc9e0458bcd01f8c8d6b178d43ccf028===. Value: FALSE
+[2026-01-22 02:02:58] [class-ss-task.php:44] Status message: [generate_404] 404 Page generated
+[2026-01-22 02:02:58] [class-ss-archive-creation-job.php:223] Task performed: 1
+[2026-01-22 02:02:58] [class-ss-archive-creation-job.php:247] We've found our next task: create_zip_archive
+[2026-01-22 02:02:58] [class-ss-archive-creation-job.php:206] Current task: create_zip_archive
+[2026-01-22 02:02:58] [class-ss-archive-creation-job.php:220] Performing task: create_zip_archive
+[2026-01-22 02:02:58] [class-ss-create-zip-archive.php:115] Creating zip archive via ZipArchive (ZIP64 capable if libzip supports it)
+[2026-01-22 02:02:58] [class-ss-task.php:44] Status message: [create_zip_archive] ZIP archive created:  <a href="http://cardiomodel.local/wp-content/uploads/simply-static/temp-files/simply-static-1-1769047371.zip">Click here to download</a>
+[2026-01-22 02:02:58] [class-ss-archive-creation-job.php:223] Task performed: 1
+[2026-01-22 02:02:58] [class-ss-archive-creation-job.php:247] We've found our next task: wrapup
+[2026-01-22 02:02:58] [class-ss-archive-creation-job.php:206] Current task: wrapup
+[2026-01-22 02:02:58] [class-ss-archive-creation-job.php:220] Performing task: wrapup
+[2026-01-22 02:02:58] [class-ss-task.php:44] Status message: [wrapup] Wrapping up
+[2026-01-22 02:02:58] [class-ss-archive-creation-job.php:223] Task performed: 1
+[2026-01-22 02:02:58] [class-ss-archive-creation-job.php:242] This task is done and there are no more tasks, time to complete the job
+[2026-01-22 02:02:58] [class-ss-archive-creation-job.php:287] Completing the job
+[2026-01-22 02:02:58] [class-ss-archive-creation-job.php:427] Status message: [done] Done! Finished in 00:00:07
