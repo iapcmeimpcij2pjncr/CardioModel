@@ -503,7 +503,8 @@ def ode_wrapper(t_val, y, PT, ap, bp, cp, php, j, num, fma, Pin, Pout, dPTdt, L,
         pin_t, pout_t, dptdt_t, L \n \
     ) \n \
  \n \
-def run_main(pin_scale): \n \
+def run_main(pin_scale, order_of_accuracy): \n \
+    print(f"Running with pin_scale={pin_scale} and order_of_accuracy={order_of_accuracy}") \n \
     Pin = Pin_preload \n \
     Pout = Pout_preload \n \
     Pt = Pt_Preload \n \
@@ -572,6 +573,9 @@ def run_main(pin_scale): \n \
     sparsity = build_jac_sparsity(fm, n) \n \
  \n \
     # Initial condition for the first time step \n \
+    # rtol=10 ** -order_of_accuracy, \n \
+    # atol=10 ** -(order_of_accuracy + 2), \n \
+    print(f"rtol: {10 ** -order_of_accuracy}, atol: {10 ** -(order_of_accuracy + 2)}") \n \
     y0 = np.array(Pm[:, 0]) \n \
     for mm in range(10): \n \
         t_span = (t[0], t[1]) \n \
@@ -582,8 +586,8 @@ def run_main(pin_scale): \n \
             y0, \n \
             args=(PT[0], ap, bp, cp, php, 0, num, fma, Pin, Pout, dPTdt[0], L), \n \
             method=\'BDF\', \n \
-            rtol=1e-5, \n \
-            atol=1e-7, \n \
+            rtol=10 ** -order_of_accuracy, \n \
+            atol=10 ** -(order_of_accuracy + 2), \n \
             jac_sparsity=sparsity, \n \
         ) \n \
         y0 = sol[\'y\'][:, -1]  # Update initial condition for the next time step \n \
@@ -604,9 +608,9 @@ def run_main(pin_scale): \n \
         Pm[:, 0],  # Initial condition \n \
         args=(PT, ap, bp, cp, php, 0, num, fma, Pin, Pout, dPTdt, L, interps), \n \
         method=\'BDF\', \n \
-        t_eval=t,  # Evaluate at your original time points \n \
-        rtol=1e-5,  # Moderate tolerances for stability \n \
-        atol=1e-6, \n \
+        t_eval=t, \n \
+        rtol=10 ** -order_of_accuracy, \n \
+        atol=10 ** -(order_of_accuracy + 2), \n \
         jac_sparsity=sparsity \n \
     ) \n \
     time = default_timer() - start \n \
@@ -662,8 +666,8 @@ def run_main(pin_scale): \n \
     return str(json.dumps([Time_v_Pressure, Time_v_Radius, Time_v_Flow_In, Time_V_Flow_Out])) \n \
  \n \
 def generate_data(parameters): \n \
-    dict(parameters) \n \
-    return run_main(float(parameters["pin_scale"])) \n \
+    print(parameters) \n \
+    return run_main(float(parameters["pin_scale"]), float(parameters["order_of_accuracy"])) \n \
 '
     // END OF PASTED SECTION
     );

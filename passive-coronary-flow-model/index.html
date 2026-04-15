@@ -189,16 +189,23 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
         </style>
         <form id="parameters">
         <!-- THIS IS WHERE YOU START COPY AND PASTE -->
-                    <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide">
-            <div class="form-row">
+		
+            <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide">
+			
             <div class="form-row">
                 <label for="pin_scale">Occlusion Scale (0 is no flow, 1 is full flow)</label>
                 <input type="number" name="pin_scale" id="pin_scale" step="0.1" value="1" min="0" max="1"><br>
             </div>
+			
+            <div class="form-row">
+                <label for="order_of_accuracy">Solver Order of Accuracy (10<sup>-order</sup>) </label>
+                <input type="number" name="order_of_accuracy" id="order_of_accuracy" step="1" value="7" min="2" max="12"><br>
+            </div>
+			
             <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide">
-
-                <!-- THIS IS WHERE YOU END COPY AND PASTE -->
-        
+		
+		<!-- THIS IS WHERE YOU END COPY AND PASTE -->
+        </form>
     </div>
         <hr class="wp-block-separator has-alpha-channel-opacity is-style-wide">
 
@@ -208,7 +215,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
             <button class="wp-block-button__link has-primary-hover-color has-mono-3-background-color has-text-color has-background has-link-color has-superbfont-small-font-size has-custom-font-size wp-element-button" style="border-style:none;border-width:0px;border-radius:10px;padding-top:0;padding-right:var(--wp--preset--spacing--superbspacing-small);padding-bottom:0;padding-left:var(--wp--preset--spacing--superbspacing-small)" id="export" onclick="exportValues()">Export</button>
         </div>
         <p id="Fill In Error"></p>
-    </form></div>
+    </div>
 </div>
 </div>
 
@@ -443,7 +450,7 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 .wp-block-button a:hover {
     text-decoration: underline;
 }
-</style></footer></div>
+</style></footer>
 <script type="speculationrules">
 {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/creative-minimalist\/*","\/wp-content\/themes\/bakery-and-pastry\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
 </script>
